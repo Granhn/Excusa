@@ -11,7 +11,11 @@ function getRandomInt(max) {
 }
 
 let generateExcuse = () => {
-    let newExcuse = `${who[getRandomInt(who.length)]} ${action[getRandomInt(action.length)]} ${what[getRandomInt(what.length)]} ${when[getRandomInt(when.length)]}`
+    let newExcuse = `${who[getRandomInt(who.length)]} 
+    ${action[getRandomInt(action.length)]}
+    ${what[getRandomInt(what.length)]} 
+    ${when[getRandomInt(when.length)]}
+    `
     excuse.innerText = newExcuse
 }
 button.addEventListener('click', generateExcuse)
